@@ -1,0 +1,4 @@
+Testes/
+node_modules
+package-lock
+.env

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Informe seu usuário:" required>
+                <input type="password" name="password" placeholder="Informe sua senha:" required>
+                <button type="submit">Entrar</button>
+                <button type="button" class="register-return" onclick="window.location.href='../register/index.html'">Ainda não possui usuário? Registre-se!</button>
+            </form>
+        </div>
+        
+        <div class="powered-by">
+            Powered by <img src="../assets/logo.png" alt="Logo da Empresa" class="company-logo">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

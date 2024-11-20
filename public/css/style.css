@@ -1,0 +1,11 @@
+.powered-by {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.company-logo {
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 5px;
+}

@@ -1,0 +1,14 @@
+Para iniciar o server.js: node server.js
+
+Configurado para que o server.js realize a criação da database e de suas tabelas caso ainda não estiver configurado quando iniciado.
+
+
+Aplicativos necessários para executar o projeto:
+- Node.js (https://nodejs.org/en)
+- PostgreSQL (https://www.postgresql.org/)
+
+
+
+// Gera uma chave secreta aleatória de 256 bits (32 bytes)
+const secret = crypto.randomBytes(32).toString('hex');
+console.log(secret);

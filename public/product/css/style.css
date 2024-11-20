@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 50px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.product-img{
+    padding: 2.5px;
+    margin-top: 2.5px;
+    display: flex;
+    height: 250px;
+    width: 250px;
+}
+
+.product-main-text{
+    flex-direction: row;
+    width: 150px;
+    font-family: 'arial';
+}
+
+.product-main-title{
+    margin-top: 5px;
+}
+
+.heart{
+    float: right;
+}
+
+.product-star-container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-full-price{
+    font-size: 10px;
+    color: gray;
+    text-decoration: line-through;
+    width: 50%;
+}
+.product-price-discount{
+    float: right;
+    font-size: 10px;
+    color: green;
+    width: 50%;
+}
+
+.product-price{
+    font-family: Arial;
+    font-size : 30px;
+}
+
+.product-installments{
+    font-size: 10px;
+    color: green;
+}
+
+.product-shipping-container{
+    padding: 5px;
+    flex-direction: row-reverse;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 150px;
+}
+
+.product-deliver-time{
+    color: green;
+}
+
+.another-deliver-ways{
+    font-size: 10px;
+}
+
+#zoom {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    z-index: 10;
+}

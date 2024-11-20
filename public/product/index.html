@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Product</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="main">
+        <div class="product-container">
+            <!-- Imagem principal do produto-->
+            <img id="product-img" class="product-img" onmouseenter="imageZoom(event)" onmousemove="moveZoom(event)" onmouseleave="disableZoom(event)"></img>
+
+            <!-- Informações Principais do Produto-->
+            <div class="product-main-text">
+                <!-- Informação de venda -->
+                <div style="font-size: 10px;color:gray;">Novo | +5000 vendidos</div>
+                <!-- Botão Favorito -->
+                <div class="heart">
+                    <i onclick="alterFavorite()">
+                        <a id="heart"  class="bi bi-heart"></a>
+                    </i>
+                </div>
+                <!-- Titulo -->
+                <div id="product-title" class="product-main-title"></div>
+                <div class="product-star-container">
+                    <div id="star1" class="bi bi-star"></div>
+                    <div id="star2" class="bi bi-star"></div>
+                    <div id="star3" class="bi bi-star"></div>
+                    <div id="star4" class="bi bi-star"></div>
+                    <div id="star5" class="bi bi-star"></div>
+                </div>
+                <!-- Preço -->
+                <div id="product-full-price" class="product-full-price"></div>
+                <div id="product-price-discount" class="product-price-discount">10% OFF</div>
+                <div id="product-price" class="product-price"></div>
+                <!-- Parcelas -->
+                <div id="product-installments" class="product-installments"></div>
+            </div>
+            <div id="product-shipping-container" class="product-shipping-container">
+                <div id="product-deliver-time" class="product-deliver-time"></div>
+                <div id="another-deliver-ways" class="another-deliver-ways">Mais formas de entrega</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="../home_page/js/import-navbar.js"></script>
+<script type="module">
+
+    import {imageZoom} from "./imagezoom.js";
+
+    import {moveZoom} from "./imagezoom.js";
+
+    import {disableZoom} from "./imagezoom.js";
+
+    window.imageZoom = imageZoom;
+
+    window.moveZoom = moveZoom;
+
+    window.disableZoom = disableZoom;
+
+</script>
+</html>

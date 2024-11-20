@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meus Endereços</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+
+        <div id="navbar-container"></div>
+        
+        <div class="container">
+            <div class="header">
+                <h1>Meus Endereços</h1>
+ 
+            
+            </div>
+            
+            <button id="newAddressBtn" class="btn-primary">Cadastrar Novo Endereço</button>
+            
+            <div id="addresses-list">
+                <!-- Endereços serão carregados aqui dinamicamente -->
+            </div>
+
+            
+        </div>
+
+        <!-- Modal de endereço (serve tanto para cadastro quanto edição) -->
+        <div id="addressModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Cadastrar Novo Endereço</h2>
+                <form id="addressForm">
+                    <input type="hidden" name="id" autocomplete="off">
+                    <input type="text" name="recipient_name" placeholder="Nome do destinatário" required autocomplete="name">
+                    <input type="text" name="street" placeholder="Rua" required autocomplete="street-address">
+                    <input type="text" name="number" placeholder="Número" required autocomplete="on">
+                    <input type="text" name="complement" placeholder="Complemento" autocomplete="additional-name">
+                    <input type="text" name="neighborhood" placeholder="Bairro" required autocomplete="address-level2">
+                    <input type="text" name="city" placeholder="Cidade" required autocomplete="address-level2">
+                    <select name="state" required autocomplete="address-level1">
+                        <option value="">Selecione o Estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                    </select>
+                    <input type="text" name="postal_code" placeholder="CEP" required autocomplete="postal-code">
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-primary">Salvar</button>
+                        <button type="button" class="btn-secondary" id="cancelBtn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal de confirmação de exclusão -->
+        <div id="deleteModal" class="modal">
+            <div class="modal-content">
+                <h2>Confirmar Exclusão</h2>
+                <p>Tem certeza que deseja excluir este endereço?</p>
+                <div class="form-buttons">
+                    <button id="confirmDelete" class="btn-danger">Excluir</button>
+                    <button id="cancelDelete" class="btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="../home_page/js/import-navbar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../home_page/css/navbar.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+<body>
+    <div class="template">
+        <div class="header">
+            <nav class="navbar">
+                <img class="logo-header" src="../assets/logo.jpg" alt="Logo" />
+                <div class="submenu">
+                    <div class="submenu-options">
+                        <a href="#">
+                            Categorias
+                            <i class="bi bi-list"></i>
+                        </a>
+                        <!-- Submenu -->
+                        <div class="navbar-submenu-submenu-options-container-item">
+                            <a href="#">Moda Masculina</a>
+                            <a href="#">Moda Feminina</a>
+                            <a href="#">Joias</a>
+                            <a href="#">Eletrônicos</a>
+                        </div>
+                    </div>
+                    <div class="submenu-options">
+                        <a href="../home_page/">
+                            Início
+                            <i class="bi bi-house"></i>
+                        </a>
+                    </div>
+                    <div class="submenu-options">
+                        <a href="#">
+                            Ofertas
+                            <i class="bi bi-tag"></i>
+                        </a>
+                    </div>
+                    <div class="submenu-options">
+                        <a href="../address/">
+                            Endereços
+                            <i class="bi bi-geo-alt"></i>
+                        </a>
+                    </div>
+                    <div class="submenu-options">
+                        <a href="#">
+                            Carrinho
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                    <div class="submenu-options">
+                        <a href="#">
+                            Perfil
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <div class="navbar-profile-submenu">
+                            <div class="user-info">
+                                <span id="username"></span>
+                                <div class="submenu-options">
+                                    <a href="#" id="changePasswordBtn">
+                                        Alterar Senha
+                                        <i class="bi bi-lock"></i>
+                                    </a>
+                                </div>
+                                <a id="logoutBtn" class="btn-secondary">Sair</a>
+                                <a id="deleteUserBtn" class="btn-danger">Excluir Usuário</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Modal de confirmação de exclusão de usuário -->
+    <div id="deleteUserModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Confirmar Exclusão</h2>
+            <p>Você realmente deseja realizar a exclusão do usuário?</p>
+            <div class="form-buttons">
+                <button id="confirmDeleteUser" class="btn-danger">Excluir</button>
+                <button id="cancelDeleteUser" class="btn-secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de alteração de senha -->
+    <div id="changePasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeChangePasswordModal">&times;</span>
+            <h2>Alterar Senha</h2>
+            
+            <div class="message" style="display: none;"></div>
+            
+            <label for="oldPassword">Senha Antiga:</label>
+            <input type="password" id="oldPassword" required />
+            <label for="newPassword">Nova Senha:</label>
+            <input type="password" id="newPassword" required />
+            <div class="form-buttons">
+                <button id="confirmChangePassword" class="btn-danger">Alterar</button>
+                <button id="cancelChangePassword" class="btn-secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../home_page/js/import-navbar.js"></script>
+</body>
+</html>
