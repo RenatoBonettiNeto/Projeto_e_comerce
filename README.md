@@ -1,5 +1,5 @@
-# 3ª avaliação
-## Alunos: Guilherme Lopes Cardoso, Eder Back Michels Junior, Renato Bonetti Neto
+
+## Alunos que fizeram parte do projeto: Guilherme Lopes Cardoso, Eder Back Michels Junior, Renato Bonetti Neto
 
 # E-Commerce
 
